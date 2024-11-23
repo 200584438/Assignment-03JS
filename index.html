@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoothie Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Order Your Custom Smoothie</h1>
+  <form id="smoothie-form">
+    <label for="customer-name">Name:</label>
+    <input type="text" id="customer-name" placeholder="Enter your name" required><br>
+
+    <label>Choose your size:</label><br>
+    <input type="radio" id="small" name="size" value="Small" checked>
+    <label for="small">Small</label>
+    <input type="radio" id="medium" name="size" value="Medium">
+    <label for="medium">Medium</label>
+    <input type="radio" id="large" name="size" value="Large">
+    <label for="large">Large</label><br>
+
+    <label>Choose your fruits:</label><br>
+    <input type="checkbox" name="fruit" value="Strawberry"> Strawberry
+    <input type="checkbox" name="fruit" value="Banana"> Banana
+    <input type="checkbox" name="fruit" value="Blueberry"> Blueberry<br>
+
+    <label for="extras">Extras:</label>
+    <select id="extras">
+      <option value="None">None</option>
+      <option value="Chia Seeds">Chia Seeds</option>
+      <option value="Protein Powder">Protein Powder</option>
+      <option value="Honey">Honey</option>
+    </select><br>
+
+    <button type="button" id="order-btn">Order</button>
+  </form>
+
+  <h2>Your Smoothie Details</h2>
+  <div id="smoothie-output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
